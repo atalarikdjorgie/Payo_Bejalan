@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp">
+    android:layout_margin="6dp"
+    android:elevation="32dp">
+
     <LinearLayout
-        android:id="@+id/ll_destinasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="6dp"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/tv_id"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Id"
-            android:visibility="gone"
-            />
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
         <TextView
             android:id="@+id/tv_nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Destinasi"
-        android:textSize="21sp"
-        android:textStyle="bold"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Destinasi"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
         <TextView
             android:id="@+id/tv_alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No Alamat"
-            android:textSize="21sp" />
+            android:text="Alamat" />
+
+
         <TextView
             android:id="@+id/tv_jam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jam Operasional"
-            android:textSize="21sp" />
+            android:text="Jam"/>
+
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
